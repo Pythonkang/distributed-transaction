@@ -1,0 +1,9 @@
+# Project exclude paths
+/hmily-demo-bank1/target/
+/hmily-demo-bank2/target/
+/rocket-notifymsg-demo-bank1/target/
+/rocket-notifymsg-demo-pay/target/
+/rocketmq-demo-bank1/target/
+/rocketmq-demo-bank2/target/
+/seata-demo-bank1/target/
+/seata-demo-bank2/target/

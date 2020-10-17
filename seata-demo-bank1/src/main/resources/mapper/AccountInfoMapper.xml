@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yibo.seata.mapper.AccountInfoMapper">
+  <resultMap id="BaseResultMap" type="com.yibo.seata.domain.entity.AccountInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="account_name" jdbcType="VARCHAR" property="accountName" />
+    <result column="account_no" jdbcType="VARCHAR" property="accountNo" />
+    <result column="account_password" jdbcType="VARCHAR" property="accountPassword" />
+    <result column="account_balance" jdbcType="BIGINT" property="accountBalance" />
+  </resultMap>
+
+  <update id="updateAccountBalance">
+    update account_info set account_balance = account_balance + #{amount} where account_no = #{accountNo}
+  </update>
+</mapper>

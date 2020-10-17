@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="distributed-transaction" />
+        <module name="seata-demo-bank2" />
+        <module name="seata-demo-bank1" />
+        <module name="hmily-demo-bank2" />
+        <module name="hmily-demo-bank1" />
+        <module name="rocket-notifymsg-demo-bank1" />
+        <module name="rocketmq-demo-bank2" />
+        <module name="rocketmq-demo-bank1" />
+        <module name="rocket-notifymsg-demo-pay" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hmily-demo-bank1" options="-parameters" />
+      <module name="hmily-demo-bank2" options="-parameters" />
+      <module name="rocket-notifymsg-demo-bank1" options="-parameters" />
+      <module name="rocket-notifymsg-demo-pay" options="-parameters" />
+      <module name="rocketmq-demo-bank1" options="-parameters" />
+      <module name="rocketmq-demo-bank2" options="-parameters" />
+      <module name="seata-demo-bank1" options="-parameters" />
+      <module name="seata-demo-bank2" options="-parameters" />
+    </option>
+  </component>
+</project>

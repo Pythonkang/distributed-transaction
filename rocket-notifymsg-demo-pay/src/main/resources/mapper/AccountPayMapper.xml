@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yibo.notifypay.mapper.AccountPayMapper">
+  <resultMap id="BaseResultMap" type="com.yibo.notifypay.domain.entity.AccountPay">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="account_no" jdbcType="VARCHAR" property="accountNo" />
+    <result column="pay_amount" jdbcType="BIGINT" property="payAmount" />
+    <result column="result" jdbcType="VARCHAR" property="result" />
+  </resultMap>
+
+  <insert id="insertAccountPay">
+    insert into account_pay(id,account_no,pay_amount,result) values(#{id},#{accountNo},#{payAmount},#{result})
+  </insert>
+
+  <select id="findByIdTxNo" resultType="BaseResultMap">
+    select id,account_no accountNo,pay_amount payAmount,result from account_pay where id=#{txNo}
+  </select>
+
+</mapper>
